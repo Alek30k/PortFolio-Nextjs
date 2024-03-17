@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -15,8 +16,15 @@ const Navbar = () => {
 
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="hidden md:flex gap-4">
+        {links.map((link) => (
+          <Link href={link.url} key={link.title}>
+            {link.title}
+          </Link>
+        ))}
+      </div>
       {/* LOGO */}
-      <div className="">
+      <div className="md:hidden">
         <Link
           href="/"
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
@@ -27,8 +35,28 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
+      <div className="hidden md:flex gap-4">
+        <Link href="/">
+          <Image src="/github.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="/">
+          <Image src="/dribbble.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="/">
+          <Image src="/instagram.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="/">
+          <Image src="/facebook.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="/">
+          <Image src="/pinterest.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="/">
+          <Image src="/linkedin.png" alt="" width={24} height={24} />
+        </Link>
+      </div>
       {/* RESPONSIVE MENU */}
-      <div className="">
+      <div className="md:hidden">
         {/* MENU BUTTON */}
         <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
