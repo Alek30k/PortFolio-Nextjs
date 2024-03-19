@@ -59,7 +59,11 @@ const AboutPage = () => {
             {/* SKILL TITLE */}
             <h1 className="font-bold text-2xl">SKILLS</h1>
             {/* SKILL LIST */}
-            <div className=""></div>
+            <div className="">
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white">
+                JavaScript
+              </div>
+            </div>
             {/* SKILL SCROLL  SVG */}
             <svg
               width="188"
