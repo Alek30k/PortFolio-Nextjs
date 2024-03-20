@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import AboutPage from "./about/page";
+import PortfolioPage from "./portfolio/page";
 
 const Homepage = () => {
   return (
@@ -44,9 +45,12 @@ const Homepage = () => {
         </section>
       </motion.div>
 
-      <section className="pt-28 relative h-full">
+      {/* <section className="pt-28 relative h-full">
         <AboutPage />
       </section>
+      <section className="pt-0 relative h-full">
+        <PortfolioPage />
+      </section> */}
     </>
   );
 };
