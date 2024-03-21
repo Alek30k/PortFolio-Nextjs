@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import AboutPage from "./about/page";
-import PortfolioPage from "./portfolio/page";
+// import AboutPage from "./about/page";
+// import PortfolioPage from "./portfolio/page";
 
 const Homepage = () => {
   return (
